@@ -31,6 +31,8 @@ exec --no-startup-id setxkbmap -layout 'us,ru' -variant qwerty -option 'grp:alt_
 
 # keybinding to lock screen
 bindsym $mod+l exec "i3lock -c 000000"
+# tap to click
+exec xinput set-prop 13 "libinput Tapping Enabled" 1
 
 # auto lock the screen
 exec "xautolock -detectsleep -time 3 -locker \"i3lock -c 000000\""
